@@ -14,25 +14,6 @@ function playSound()
 function stopsound()
 {
 x.pause();
-x.currentTime = 0;;
+x.currentTime = 0;
 	}
 	
-document.onkeydown = function(e)
-{
-	e = e || window.event;
-		var key = e.which || e.keyCode;
-		if(key==="&#128147")
-		{
-			playsound();
-		}
-	};
-	
-	document.onkeyup = function(e){
-		e = e || window.event;
-		var key = e.which || e.keyCode;
-		if(key==="&#128147")
-		{
-			stopsound();
-		}
-	
-	};
